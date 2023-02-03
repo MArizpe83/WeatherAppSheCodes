@@ -1,0 +1,123 @@
+body {
+  background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  color: #1a64d6;
+  font-family: "Roboto Slab", serif;
+}
+
+h1 {
+  color: #1a64d6;
+  font-family: "Roboto Slab", serif;
+  font-size: 60px;
+  line-height: 48px;
+  margin: 0;
+  text-align: left;
+}
+
+h2 {
+  font-family: "Roboto Slab", serif;
+  text-align: left;
+  font-size: 30px;
+  line-height: 48px;
+  font-weight: 400;
+  color: #1a64d6;
+}
+
+h3 {
+  margin: 0;
+  text-align: left;
+  font-size: 25px;
+  line-height: 48px;
+  font-weight: 400;
+  color: #1a64d6;
+}
+
+ul {
+  list-style-type: none;
+  font-family: "Roboto Slab", serif;
+  text-align: left;
+  font-size: 25px;
+  line-height: 48px;
+  font-weight: 200;
+  color: #1a64d6;
+}
+
+li {
+  list-style-type: none;
+  font-family: "Roboto Slab", serif;
+  text-align: left;
+  font-size: 20x;
+  line-height: 30px;
+  font-weight: 150;
+  color: #1a64d6;
+}
+
+#temperature,
+#units {
+  font-family: "Roboto Slab", serif;
+  text-align: left;
+  font-size: 40px;
+  line-height: 30px;
+  font-weight: 200;
+  color: #1a64d6;
+}
+
+.col-2 {
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 10px;
+  transition: all 200ms ease-in-out;
+  max-width: 400px;
+  margin: 0 auto;
+  padding-top: 200px;
+  cursor: pointer;
+}
+
+input[type="search"] {
+  border: 2px solid blue;
+  border-radius: 4px;
+}
+
+#celsius-link,
+#fahrenheit-link {
+  text-decoration: none;
+}
+
+.fa-cloud {
+  color: rgb(237, 242, 243);
+  font-size: 150px;
+  text-align: right;
+}
+
+#geo-button {
+  border: 2px solid rgb(177, 228, 252);
+}
+#geo-button :hover {
+  background-color: 2px solid rgb(177, 228, 252);
+}
+
+.fa-cloud-bolt {
+  color: rgb(237, 242, 243);
+}
+
+.fa-cloud-sun-rain {
+  color: rgb(237, 242, 243);
+}
+
+.fa-cloud-showers-heavy {
+  color: rgb(237, 242, 243);
+}
+.col-2 :hover {
+  background: #d0dff8;
+}
+p {
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  opacity: 0.7;
+  text-align: left;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  color: rgb(237, 242, 243);
+}
