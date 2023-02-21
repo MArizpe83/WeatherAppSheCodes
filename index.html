@@ -11,81 +11,77 @@
       crossorigin="anonymous"
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/8637859f6c.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Weather App</title>
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <form class="search-form" id="search-form">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+           <form class="search-form" id="search-form">
           <div class="row">
             <div class="col-6">
               <input
                 type="search"
-                placeholder="City..."
+                placeholder="Search Any City..."
                 autofocus="on"
                 autocomplete="off"
                 id="city-input"
                 class="form-control shadow-sm"
               />
             </div>
-            <div class="col-3">
+            <div class="col-5">
               <input
                 type="submit"
-                value="Search"
-                class="form-control btn btn-primary shadow-sm w-100"
-              />
-            </div>
-            <div class="col-3">
-              <button class="btn btn-light w-100" id="current-location-button">
-                Weather in your City
-              </button>
+                value="Get Forecast"
+                class="form-control btn btn-primary shadow-sm w-100"/>
             </div>
           </div>
         </form>
-   <div class="row"></div>
-<div class="row"></div>
-      <div class="container text-center">
-        <div class="row align-items-start">
-          <div class="col-3">
-             <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Clear" id="icon"/>
+          <div class="row"></div>
+          <div class="overview">
+            <h1 id="city"></h1>
+            <ul>
+              <li>Last updated: <span id="date"></span></li>
+            </ul>
           </div>
-          <div class="col-7">
-        <h1 id="city"></h1>
-        <ul>
-          <li id="date"></li>
-          <li id="description"></li>
-        </ul>
-        <div class="row">
-          <div class="col-7">
-            <div class="clearfix">
-              <div class="float-left">
-                <span class="temperature" id="temperature"></span
-                >
-                <span class="units">
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img src="" alt="Clear" id="icon" class="float-left" />
+                <div class="float-left">
+                  <strong id="temperature"></strong
+                  >
+<span class="units">
                   <a href="#" id="celsius-link">°C</a> |
                   <a href="#" id="fahrenheit-link">°F</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
               <ul>
-              <li>Humidity: <span id="humidity"></span>%</li>
-              <li>Wind: <span id="wind"></span> km/h</li>
-            </ul>
+                <li id="description"></li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+              </ul>
+            </div>
+          </div>
+          <div class="weather-forecast" id="forecast"></div>
         </div>
+        <small>
+          <a
+            href="https://github.com/MArizpe83/WeatherAppSheCodes"
+            target="_blank"
+            >Open-source code</a
+          >
+          by Mildred Arizpe-Vicencio
+        </small>
       </div>
-    <div class="row"></div>
-        <div class="row"></div>
-    <footer>
-      <p><a href="https://github.com/MArizpe83/WeatherAppSheCodes"> Open Source Code</a> by Mildred Arizpe</p>
-    </footer>
+    </div>
     <script src="newweatherapp.js"></script>
   </body>
 </html>
